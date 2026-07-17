@@ -17,7 +17,7 @@ public class Author extends Person{
     @Override
     public String whoYouAre()
     {
-       return super.whoYouAre();
+       return this.getName();
     }
 
     public void showBook(){
