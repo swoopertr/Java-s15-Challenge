@@ -30,4 +30,9 @@ public class Reader extends Person{
     public List<Book> getBooks() {
         return this.books;
     }
+
+    @Override
+    public String whoYouAre() {
+        return this.getName();
+    }
 }
