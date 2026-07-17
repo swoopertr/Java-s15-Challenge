@@ -1,9 +1,12 @@
 package com.example.app;
 
+import com.example.app.Interfaces.BookManager;
+import com.example.app.Interfaces.BookMethods;
+
 import java.util.List;
 
-public class Librarian extends Person {
-    
+public class Librarian extends Person implements BookMethods {
+
     private String password;
 
     public Librarian(String name, String password) {
@@ -35,13 +38,24 @@ public class Librarian extends Person {
         System.out.println("Bill is created.");
     }
 
-    public void returnBook() {
-        System.out.println("Book is returned.");
-    }
-
 
     @Override
     public String whoYouAre() {
         return this.getName();
+    }
+
+    @Override
+    public void return_book() {
+        //???
+        System.out.println("Book is returned.");
+    }
+
+     public void new_book(Book book) {
+        Library.newBook(book);
+    }
+
+    @Override
+    public void borrow_book() {
+
     }
 }
