@@ -1,4 +1,4 @@
-package com.example.app.model;
+package com.example.app.model.People;
 
 public abstract class Person {
     private String name;

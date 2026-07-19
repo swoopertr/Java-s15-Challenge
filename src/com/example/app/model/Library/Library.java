@@ -1,4 +1,7 @@
-package com.example.app.model;
+package com.example.app.model.Library;
+
+import com.example.app.model.Book.Book;
+import com.example.app.model.People.Reader;
 
 import java.util.List;
 

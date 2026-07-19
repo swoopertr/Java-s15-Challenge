@@ -1,14 +1,15 @@
-package com.example.app.Interfaces;
+package com.example.app.service.Interface;
 
-import com.example.app.model.Category;
+import com.example.app.model.Book.Book;
+import com.example.app.model.Library.Category;
+
+import java.util.List;
 
 public interface LibraryService {
 
-
-
     void updateBook(String id, String newTitle, double newPrice);
     void deleteBook(String id);
-    void listBooksByCategory(Category category);
+    List<Book> listBooksByCategory(Category category);
     void listBooksByAuthor(String authorName);
     void borrowBook(String userId, String bookId);
     void returnBook(String userId, String bookId);

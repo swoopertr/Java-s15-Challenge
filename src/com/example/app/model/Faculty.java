@@ -1,5 +1,7 @@
 package com.example.app.model;
 
+import com.example.app.model.People.Student;
+
 import java.util.List;
 
 public class Faculty extends MemberRecord {

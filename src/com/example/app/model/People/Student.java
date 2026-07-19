@@ -1,4 +1,6 @@
-package com.example.app.model;
+package com.example.app.model.People;
+
+import com.example.app.model.MemberRecord;
 
 public class Student extends MemberRecord {
     private Integer studentId;

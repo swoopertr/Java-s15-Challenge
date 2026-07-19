@@ -1,4 +1,7 @@
-package com.example.app.model;
+package com.example.app.model.Book;
+
+import com.example.app.model.People.Author;
+import com.example.app.model.People.Student;
 
 public class Book {
     public String id;
@@ -8,7 +11,7 @@ public class Book {
     public String status;
     public String edition;
     public String dateOfPurchase;
-    public Student owner; 
+    public Student owner;
 
     public Book(String id, Author author, String name, int price,
                 String status, String edition, String dateOfPurchase,Student owner) {

@@ -1,7 +1,5 @@
-package com.example.app.Interfaces;
+package com.example.app.model.Book;
 
-
-import com.example.app.model.Book;
 
 public interface BookMethods {
     void return_book();

@@ -1,4 +1,6 @@
-package com.example.app.model;
+package com.example.app.model.Book;
+
+import com.example.app.model.People.Author;
 
 public class StudyBooks extends Book {
 

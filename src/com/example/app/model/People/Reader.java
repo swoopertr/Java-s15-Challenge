@@ -1,8 +1,10 @@
-package com.example.app.model;
+package com.example.app.model.People;
+
+import com.example.app.model.Book.Book;
 
 import java.util.List;
 
-public class Reader extends Person{
+public class Reader extends Person {
     private List<Book> books;
 
     public Reader(List<Book> books, String name )
