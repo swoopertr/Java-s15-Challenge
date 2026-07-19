@@ -1,20 +1,25 @@
-package com.example.app.model.Book;
+package com.example.app.model.Library.Book;
 
-import com.example.app.model.People.Author;
-import com.example.app.model.People.Student;
+import com.example.app.model.Member.People.Author;
+import com.example.app.model.Member.People.Person;
+import com.example.app.model.Member.People.Student;
+
+import java.time.LocalDate;
+import java.util.Date;
 
 public class Book {
     public String id;
     public Author author;
     public String name;
     public int price;
-    public String status;
+    public Boolean status;
     public String edition;
-    public String dateOfPurchase;
-    public Student owner;
+    public LocalDate dateOfPurchase;
+    public Person owner;
+
 
     public Book(String id, Author author, String name, int price,
-                String status, String edition, String dateOfPurchase,Student owner) {
+                Boolean status, String edition, LocalDate dateOfPurchase,Person owner) {
         this.id = id;
         this.author = author;
         this.name = name;
@@ -24,6 +29,8 @@ public class Book {
         this.dateOfPurchase = dateOfPurchase;
         this.owner = owner; 
     }
+
+
     // GETTER SETTER METHODLARI
 
 
@@ -59,11 +66,11 @@ public class Book {
         this.price = price;
     }
 
-    public String getStatus() {
+    public Boolean getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(Boolean status) {
         this.status = status;
     }
 
@@ -75,15 +82,15 @@ public class Book {
         this.edition = edition;
     }
 
-    public String getDateOfPurchase() {
+    public LocalDate getDateOfPurchase() {
         return dateOfPurchase;
     }
 
-    public void setDateOfPurchase(String dateOfPurchase) {
+    public void setDateOfPurchase(LocalDate dateOfPurchase) {
         this.dateOfPurchase = dateOfPurchase;
     }
 
-    public void setOwner(Student owner) {
+    public void setOwner(Person owner) {
         this.owner = owner;
     }
 
@@ -98,12 +105,12 @@ public class Book {
     }
 
 
-    public void changeOwner(Student newOwner) {
+    public void changeOwner(Person newOwner) {
         this.owner = newOwner;
     }
 
 
-    public Student getOwner() {
+    public Person getOwner() {
         return this.owner;
     }
 
@@ -120,7 +127,7 @@ public class Book {
     }
 
 
-    public void update_status(String newStatus) {
-        this.status = newStatus;
+    public void update_status(Boolean status) {
+        this.status = status;
     }
 }

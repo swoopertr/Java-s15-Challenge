@@ -1,15 +1,14 @@
-package com.example.app.model.People;
+package com.example.app.model.Member.People;
 
-import com.example.app.model.Book.Book;
+import com.example.app.model.Library.Book.Book;
 
 import java.util.List;
 
 public class Reader extends Person {
     private List<Book> books;
 
-    public Reader(List<Book> books, String name )
-    {
-        super(name);
+    public Reader(String name, int tcNo, List<Book> books) {
+        super(name, tcNo);
         this.books = books;
     }
 

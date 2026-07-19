@@ -1,4 +1,4 @@
-package com.example.app.model.Book;
+package com.example.app.model.Library.Book;
 
 
 public interface BookMethods {

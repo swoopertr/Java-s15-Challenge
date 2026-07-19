@@ -1,7 +1,7 @@
-package com.example.app.model.People;
+package com.example.app.model.Member.People;
 
-import com.example.app.model.Book.BookMethods;
-import com.example.app.model.Book.Book;
+import com.example.app.model.Library.Book.BookMethods;
+import com.example.app.model.Library.Book.Book;
 import com.example.app.model.Library.Library;
 
 import java.util.List;
@@ -10,8 +10,8 @@ public class Librarian extends Person implements BookMethods {
 
     private String password;
 
-    public Librarian(String name, String password) {
-        super(name);
+    public Librarian(String name, int tcNo, String password) {
+        super(name, tcNo);
         this.password = password;
     }
 

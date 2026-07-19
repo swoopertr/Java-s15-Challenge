@@ -1,24 +1,27 @@
-package com.example.app.model;
+package com.example.app.model.Member;
+
+import com.example.app.model.Member.People.Person;
 
 public class MemberRecord {
     private long id;
-    private String name;
+
     private String address;
     private String phoneNo;
     private String type;
     private String dateOfMembership;
     private int noBooksIssued;
     private int maxBookLimit;
+    private Person person;
     
-    public MemberRecord(long id, String name, String address, String phoneNo, String type, String dateOfMembership, int noBooksIssued, int maxBookLimit) {
+    public MemberRecord(Person person,long id, String address, String phoneNo, String type, String dateOfMembership, int noBooksIssued, int maxBookLimit) {
         this.id = id;
-        this.name = name;
         this.address = address;
         this.phoneNo = phoneNo;
         this.type = type;
         this.dateOfMembership = dateOfMembership;
         this.noBooksIssued = noBooksIssued;
         this.maxBookLimit = maxBookLimit;
+        this.person = person;
     }
 
     public long getId() {
@@ -26,7 +29,11 @@ public class MemberRecord {
     }
 
     public String getName() {
-        return name;
+        return person.getName();
+    }
+
+    public Integer getTcNo() {
+        return person.getTcNo();
     }
 
     public String getAddress() {
