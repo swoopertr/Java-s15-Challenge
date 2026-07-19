@@ -1,7 +1,7 @@
 package com.example.app.Interfaces;
 
 
-import com.example.app.Book;
+import com.example.app.model.Book;
 
 public interface BookMethods {
     void return_book();

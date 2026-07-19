@@ -1,6 +1,5 @@
-package com.example.app;
+package com.example.app.model;
 
-import com.example.app.Interfaces.BookManager;
 import com.example.app.Interfaces.BookMethods;
 
 import java.util.List;

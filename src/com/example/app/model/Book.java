@@ -1,4 +1,4 @@
-package com.example.app;
+package com.example.app.model;
 
 public class Book {
     public String id;
@@ -20,6 +20,68 @@ public class Book {
         this.edition = edition;
         this.dateOfPurchase = dateOfPurchase;
         this.owner = owner; 
+    }
+    // GETTER SETTER METHODLARI
+
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(Author author) {
+        this.author = author;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getEdition() {
+        return edition;
+    }
+
+    public void setEdition(String edition) {
+        this.edition = edition;
+    }
+
+    public String getDateOfPurchase() {
+        return dateOfPurchase;
+    }
+
+    public void setDateOfPurchase(String dateOfPurchase) {
+        this.dateOfPurchase = dateOfPurchase;
+    }
+
+    public void setOwner(Student owner) {
+        this.owner = owner;
     }
 
 
